@@ -17,6 +17,10 @@ set title
 set backspace=indent,eol,start
 colorscheme darkblue
 
+"Show when line goes past 80 chars
+set textwidth=80
+set colorcolumn=+1
+
 "Make swapfiles and put them in tmp
 set swapfile
 set dir=~/tmp
