@@ -123,3 +123,4 @@ export BROWSER="/mnt/c/Users/\"Program Files (x86)\"/Google/Chrome/Application/c
 alias anttest="/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe \"ant test\""
 alias powershell="/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
 alias jopen="/mnt/c/Users/\"Amanda Liu\"/j64-807/bin/jconsole.exe"
+alias clean="rm -f *.o *.cmi *.cmx a.out *.hi"
