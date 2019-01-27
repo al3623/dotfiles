@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export PATH=${PATH}:/home/amliu/group/projects/fhw/compiler-06
 export WYVERN_HOME="/mnt/c/Users/Amanda Liu/wyvern"
 export CLASSPATH="/mnt/c/Users/Amanda Liu/wyvern/tools/build:/mnt/c/Users/Amanda Liu/wyvern/tools/lib/CopperRuntime.jar:/mnt/c/Users/Amanda Liu/wyvern/tools/lib/asm-debug-all-5.0.1.jar:/mnt/c/Users/Amanda Liu/wyvern/tools/lib/junit-4.11.jar"
 export BROWSER="/mnt/c/Users/\"Program Files (x86)\"/Google/Chrome/Application/chrome.exe"
@@ -123,4 +124,6 @@ export BROWSER="/mnt/c/Users/\"Program Files (x86)\"/Google/Chrome/Application/c
 alias anttest="/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe \"ant test\""
 alias powershell="/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
 alias jopen="/mnt/c/Users/\"Amanda Liu\"/j64-807/bin/jconsole.exe"
-alias clean="rm -f *.o *.cmi *.cmx a.out *.hi"
+alias fhwc="fhw --simplified -f --color-types"
+alias fhws="fhw --simplified"
+alias clean="rm -f *.o *.hi *.cmi *.cmx a.out"
