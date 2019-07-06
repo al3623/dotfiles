@@ -1,3 +1,7 @@
 [user]
 	email = al3623@columbia.edu
 	name = Amanda Liu
+[credential]
+	helper = cache
+[core]
+	editor = vim
