@@ -61,7 +61,7 @@ if [ "$color_prompt" = yes ]; then
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
-unset color_prompt force_color_prompt
+unset color_prompt force_color_prompt DISPLAY
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -115,8 +115,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export PATH=${PATH}:/home/amliu/group/projects/fhw/compiler-06
+alias mvpaper='mv ./verified-sparsity.pdf /mnt/c/Users/amliu/Documents/'
+export PATH="$PATH:/usr/local/texlive/2025/bin/x86_64-linux/"
+export TACO_CFLAGS="-O3 -ffast-math -std=c99"
+export TACO_INCLUDE_DIR="/home/lamanda/taco/include"
+export YOUR_INCLUDE_DIR="/home/lamanda/atl/src/slib"
+export TACO_LIBRARY_DIR="/home/lamanda/taco/build/lib"
+export YOUR_LIBRARY_DIR="/home/lamanda/atl/src/slib"
 export WYVERN_HOME="/mnt/c/Users/Amanda Liu/wyvern"
 export CLASSPATH="/mnt/c/Users/Amanda Liu/wyvern/tools/build:/mnt/c/Users/Amanda Liu/wyvern/tools/lib/CopperRuntime.jar:/mnt/c/Users/Amanda Liu/wyvern/tools/lib/asm-debug-all-5.0.1.jar:/mnt/c/Users/Amanda Liu/wyvern/tools/lib/junit-4.11.jar"
 export BROWSER="/mnt/c/Users/\"Program Files (x86)\"/Google/Chrome/Application/chrome.exe"
@@ -128,3 +133,4 @@ alias fhwc="fhw --simplified -f --color-types"
 alias fhws="fhw --simplified"
 alias clean="rm -f *.o *.hi *.cmi *.cmx a.out"
 alias topdf="~/dotfiles/bash/topdf.sh"
+clear
